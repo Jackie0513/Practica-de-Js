@@ -17,6 +17,14 @@
     <main>
       <section class="container">
         <h2>Mis pacientes</h2>
+        <label for="filtrar-tabla"></label>
+        <input
+          type="text"
+          name="filtro"
+          id="filtrar-tabla"
+          placeholder="Digite el Nombre del Paciente"
+        />
+
         <table>
           <thead>
             <tr>
@@ -73,13 +81,7 @@
 
     <section class="container">
       <h2 id="titulo-form">Adicionar nuevo paciente</h2>
-      <ul id="mensajes-errores">
-
-
-
-        
-      </ul>
-
+      <ul id="mensajes-errores"></ul>
 
       <form id="form-adicionar">
         <div class="grupo">
@@ -129,5 +131,7 @@
 
     <script src="js/principal.js"></script>
     <script src="js/form.js"></script>
+    <script src="js/eliminar-paciente.js"></script>
+    <script src="js/filtrar.js"></script>
   </body>
 </html>

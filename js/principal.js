@@ -1,4 +1,4 @@
-var pacientes = document.querySelectorAll(".paciente");
+const pacientes = document.querySelectorAll(".paciente");
 
 const validarPeso = (peso) =>
 (peso >=0 && peso <1000) ? true : false;
@@ -22,13 +22,11 @@ for (let index = 0; index < pacientes.length; index++) {
     var alturaEsValida = validarAltura(altura);
 
     if (!pesoEsValido) {
-        console.log("peso incorrecto");
         tdimc.textContent = "Peso Incorrecto";
         paciente.classList.add("paciente-incorrecto");
         pesoEsValido = false;
     }
     if (!alturaEsValida) {
-        console.log("altura Oncorrecta");
         tdimc.textContent = "Altura Incorrecta";
         paciente.classList.add("paciente-incorrecto");
         pesoEsValido = false;
